@@ -1,0 +1,36 @@
+{
+  "name": "fixtures-tutorial--fakingoose-with-node-mongodb-fixtures",
+  "version": "1.0.0",
+  "description": "An example of fixture creation",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "DB_URI=mongodb://localhost:27017/mydb npx mocha --no-timeouts test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faboulaws/fixtures-tutorial--fakingoose-with-node-mongodb-fixtures.git"
+  },
+  "keywords": [
+    "fixtures",
+    "mongoose"
+  ],
+  "author": "faboulaws@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faboulaws/fixtures-tutorial--fakingoose-with-node-mongodb-fixtures/issues"
+  },
+  "homepage": "https://github.com/faboulaws/fixtures-tutorial--fakingoose-with-node-mongodb-fixtures#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  },
+  "dependencies": {
+    "fakingoose": "^1.2.2",
+    "mongoose": "^5.7.1",
+    "node-mongodb-fixtures": "^3.0.8"
+  }
+}

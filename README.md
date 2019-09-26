@@ -1,0 +1,1 @@
+# Fixture tutorial: Create MongoDb fixtures based on Mongoose schema - Fakingoose with node-mongodb-fixtures

@@ -6,7 +6,7 @@ module.exports = async () => {
         .then((collection) => {
             return collection.find().toArray();
         });
-    const unseed = () => fixtures.unload()
+    const cleanup = () => fixtures.unload()
         .then(() => fixtures.disconnect());
-    return { unseed, users };
+    return { cleanup, entities: users };
 }

@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "DB_URI=mongodb://localhost:27017/mydb npx mocha --no-timeouts test/*"
+    "test": "npx mocha --no-timeouts test/*"
   },
   "repository": {
     "type": "git",
@@ -26,11 +26,14 @@
   "homepage": "https://github.com/faboulaws/fixtures-tutorial--fakingoose-with-node-mongodb-fixtures#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0"
+    "chai-http": "^4.3.0",
+    "fakingoose": "^1.2.2",
+    "mocha": "^6.2.0",
+    "node-mongodb-fixtures": "^3.0.8",
+    "testcontainers": "^2.1.0"
   },
   "dependencies": {
-    "fakingoose": "^1.2.2",
-    "mongoose": "^5.7.1",
-    "node-mongodb-fixtures": "^3.0.8"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1"
   }
 }

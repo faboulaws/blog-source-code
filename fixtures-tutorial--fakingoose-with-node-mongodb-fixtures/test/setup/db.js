@@ -7,9 +7,6 @@ exports.startDb = async () => {
     try {
         const container = await new GenericContainer("mongo", "3.3")
             .withExposedPorts(27017)
-            .withEnv('MONGO_INITDB_ROOT_PASSWORD', pass)
-            .withEnv('MONGO_INITDB_ROOT_USERNAME', user)
-            // .withEnv('MONGO_INITDB_DATABASE', 'admin')
             .withWaitStrategy(Wait.forLogMessage("waiting for connections on port 27017"))
             .start();
         const mappepPort = container.getMappedPort(port);

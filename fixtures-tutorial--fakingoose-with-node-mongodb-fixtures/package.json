@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha --no-timeouts test/*"
+    "test": "npx mocha --no-timeouts test/scenarios/*"
   },
   "repository": {
     "type": "git",
